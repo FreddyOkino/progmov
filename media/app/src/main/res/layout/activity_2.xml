@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DADADA"
+    tools:context=".Activity2">
+
+    <TextView
+        android:id="@+id/txtNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="120dp"
+        android:text="TextView"
+        android:textSize="48sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtFalta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Faltas"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/txtNome"
+        app:layout_constraintTop_toBottomOf="@+id/txtNome" />
+
+    <EditText
+        android:id="@+id/edtTrabalho1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Trabalho 1"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/edtFalta"
+        app:layout_constraintTop_toBottomOf="@+id/edtFalta" />
+
+    <EditText
+        android:id="@+id/edtTrabalho2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Trabalho 2"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/edtTrabalho1"
+        app:layout_constraintTop_toBottomOf="@+id/edtTrabalho1" />
+
+    <EditText
+        android:id="@+id/edtTrabalho3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Trabalho 3"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/edtTrabalho2"
+        app:layout_constraintTop_toBottomOf="@+id/edtTrabalho2" />
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Resultado"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcula" />
+
+    <Button
+        android:id="@+id/btnCalcula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="44dp"
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="@+id/edtTrabalho3"
+        app:layout_constraintTop_toBottomOf="@+id/edtTrabalho3" />
+</androidx.constraintlayout.widget.ConstraintLayout>
